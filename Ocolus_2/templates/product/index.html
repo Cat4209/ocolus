@@ -3,7 +3,10 @@
     <title>Ocolus</title>
     <link rel="stylesheet" type="text/css" href="../../static/product/swiper.css">
     <link rel="stylesheet" type="text/css" href="../../static/product/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" async></script>
+    <script src="https://yastatic.net/share2/share.js" async></script>
 {% endblock %}
 {% block body %}
     <div class="header row">
@@ -199,23 +202,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper_slide_center_bottom">
-                            <div class="dop_info_product row">
-                                    <div class="dop_info_product_column dop_info_product_column_1 col-6">
-                                        <p>SKU: </p>
-                                        <p>Availability:</p>
-                                        <p>Categories: </p>
-                                        <p>Tags: </p>
-                                        <p>Share on:</p>
-                                    </div>
-                                    <div class="dop_info_product_column dop_info_product_column_2 col-6">
-                                        <p>HJ23456789</p>
-                                        <p class="have">In Stock</p>
-                                        <p>Men, Fashion, New Trend</p>
-                                        <p>Octopus, Vintage, Awesome, Summer, Beachwear</p>
-                                        <p>   </p>
-                                    </div>
+                        <div class="swiper_slide_center_bottom row">
+                            <div class="dop_info_product col-12 row">
+                                <div class="dop_info_product_column dop_info_product_column_1 col-2">
+                                    <p>SKU: </p>
+                                    <p>Availability:</p>
+                                    <p>Categories: </p>
+                                    <p>Tags: </p>
+                                    <p>Share on:</p>
                                 </div>
+                                <div class="dop_info_product_column dop_info_product_column_2 col-10">
+                                    <p>HJ23456789</p>
+                                    <p class="have">In Stock</p>
+                                    <p>Men, Fashion, New Trend</p>
+                                    <p>Octopus, Vintage, Awesome, Summer, Beachwear</p>
+                                    <div class="ya-share2" data-services="facebook,twitter,linkedin,tumblr,telegram" data-lang="en" data-color-scheme="whiteblack"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="arrow_right">
@@ -238,7 +241,38 @@
             </div>
         </div>
         </div>
-        <div id="dop_num_js">{{ data[0].id }}</div>
+        <div class="fourth_section">
+            <div class="fourth_section_container">
+                
+                <div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="false">
+                   <div class="carousel-indicators">
+                    <div data-target="#carousel-1" data-slide-to="0" class="carousel_controller active">Description</div>
+                    <div data-target="#carousel-1" data-slide-to="1" class="carousel_controller">Additional Information</div>
+                    <div data-target="#carousel-1" data-slide-to="2" class="carousel_controller">Reviews</div>
+                </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item carousel-item-1 active">
+                            <div class="carousel_text_article">
+                                <div class="carousel_text_top">Single-breasted jacket woven in a marled wool weave with narrow notch lapels, a decorative buttonhole and imitation suede elbow patches. Chest pocket, flap front pockets, two buttons at the front and decorative buttons at the cuffs. Partly lined. Slim fit that tapers at the chest and waist, which combined with slightly narrower sleeves creates a fitted silhouette.</div>
+                                <div class="carousel_text_bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-2">
+                            <div class="carousel_text_article">
+                                <div class="carousel_text_top">Single-breasted jacket woven in a marled wool weave with narrow notch lapels, a decorative buttonhole and imitation suede elbow patches. Chest pocket, flap front pockets, two buttons at the front and decorative buttons at the cuffs.</div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-3">
+                            <div class="carousel_text_article">
+                                <div class="carousel_text_top">Single-breasted jacket woven in a marled wool weave with narrow notch lapels, a decorative buttonhole and imitation suede elbow patches. Chest pocket, flap front pockets, two buttons at the front and decorative buttons at the cuffs.</div>
+                                <div class="carousel_text_bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="dop_num_js">{{ data[0].id }}</div>
         
 {% endblock %}
 {% block footer %}

@@ -229,6 +229,7 @@ $(document).ready(()=>{
     }
     let swiper = new Swiper('.swiper-container', {
         direction: 'vertical',
+        speed: 900,
         slidesPerView: 1,
         spaceBetween: 30,
         mousewheel: true,

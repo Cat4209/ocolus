@@ -383,7 +383,7 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     background: #fff;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 .main_container{
     width: 100%;
@@ -650,8 +650,11 @@ body::-webkit-scrollbar-thumb{
     border-top: 1px solid #eee;
     display: flex;
     align-items: flex-start;
-    width: 100%;
+    text-align: left;
+//    width: 100%;
+//    max-width: 800px;
 }
+
 .dop_info_product_column_1{
     p{
         font-family: 'Poppins', sans-serif;
@@ -692,18 +695,68 @@ body::-webkit-scrollbar-thumb{
 #dop_num_js{
     opacity: 0;
     visibility: hidden;
+    display: none;
 }
 .swiper_slide_center_bottom{
     position: relative;
 }
 .gallery-thumbs{
-    width: 400px;
+    width: 600px;
+    margin-top: 30px;
     height: auto;
-    position: absolute;
-    left: calc(420px + 50%);
-    transform: translateX(calc(-50% - 400px)) translateY(-225px);
+}
+.alert_info_title{
+    font-family: 'Rye', cursive;
+}
+.alert_info_body{
+    font-family: 'Poppins', sans-serif;
 }
 
+//FOURTH SECTION
+.fourth_section{
+    position: relative;
+    height: 480px;
+    width: 100%;
+    background: #f9f9f9;
+}
+.fourth_section_container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.carousel-indicators{
+    position: static;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+}
+.carousel_controller{
+    color: #7b7b7b;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: calc(10px + 8*(100vw/1920));
+}
+.carousel_controller.active{
+    color: #293341;
+    border-bottom: 2px solid #c91f28;
+}
+.carousel_text_article{
+    color: #7b7b7b;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: calc(10px + 6*(100vw/1920));
+    line-height: 30px;
+}
+.carousel-inner{
+    margin-top: 40px;
+}
+.carousel_text_bottom{
+    margin-top: 34px;
+}
 
 //FOOTER
 .footer{
