@@ -731,22 +731,28 @@ body::-webkit-scrollbar-thumb {
 .buy {
   margin-top: 15px;
 }
-.buy button {
+.buy .buy_box {
   width: 375px;
   height: 50px;
   font-family: "Poppins", sans-serif;
   background: #fff;
   border: 2px solid #23232c;
-  color: #23232c;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 2.21px;
   line-height: 25px;
   transition: 0.32s ease;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
-.buy button:hover {
-  transform: scale(1.05);
+.buy .buy_box a {
+  color: #23232c;
+  width: 100%;
+}
+.buy .buy_box a:hover {
+  text-decoration: none;
 }
 
 .dop_info_product {
